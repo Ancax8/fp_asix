@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="container_login">
+        <div class="login">
+
+            <form action="#" method="POST">
+
+                <h2>LOGIN</h2>
+                <p>Silakan masukkan akun Anda</p>
+
+                <!-- Input Username -->
+                <div class="form_group">
+                    <label for="usn">Nama / Email</label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="usn"
+                        placeholder="Masukkan nama atau email"
+                        required
+                    >
+                </div>
+
+                <!-- Input Password -->
+                <div class="form_group">
+                    <label for="pwd">Password</label>
+
+                    <div class="password_box">
+                        <input
+                            type="password"
+                            name="password"
+                            id="pwd"
+                            placeholder="Masukkan password"
+                            required
+                        >
+
+                        <img
+                            src="gallery/closeEye.png"
+                            alt="Tampilkan password"
+                            id="closeEye"
+                        >
+                    </div>
+                </div>
+
+                <!-- Tombol Login -->
+                <button type="submit" name="submit" id="submit">
+                    Login
+                </button>
+
+                <!-- Link Register -->
+                <div class="register">
+                    Belum punya akun?
+                    <a href="register.html">Daftar</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="JS/login.js"></script>
+</body>
+</html>

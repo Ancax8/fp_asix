@@ -1,0 +1,174 @@
+
+/* =========================
+   RESET CSS
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container_login {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* =========================
+   LOGIN BOX
+========================= */
+.login {
+    width: 100%;
+    max-width: 475px;
+
+    background-color: white;
+    padding: 40px;
+
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   JUDUL
+========================= */
+.login h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.login p {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   FORM GROUP
+========================= */
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* LABEL */
+.form_group label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* INPUT */
+.form_group input {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 9px;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.form_group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.2);
+}
+
+/* =========================
+   PASSWORD BOX
+========================= */
+.password_box {
+    position: relative;
+    width: 100%;
+}
+
+.password_box input {
+    padding-right: 45px;
+}
+
+.password_box img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 30%;
+}
+
+/* =========================
+   BUTTON LOGIN
+========================= */
+.login button {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login button:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================
+   REGISTER
+========================= */
+.register {
+    text-align: center;
+    margin-top: 25px;
+
+    font-size: 16px;
+    color: #555;
+}
+
+.register a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+    .login {
+        padding: 25px;
+    }
+}
